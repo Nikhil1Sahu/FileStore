@@ -31,20 +31,21 @@ PORT = os.environ.get("PORT", "8001")
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://nikhilsahu7j:dTQKfvo0jABOYKOu@cluster0.n2csgvi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 #--------------------------------------------
-FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "10"))  # 0 means no expiry
-BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/CodeflixSupport")
+FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "0"))  # 0 means no expiry
+BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/NG_bot_support")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 #--------------------------------------------
-START_PIC = os.environ.get("START_PIC", "https://envs.sh/uxo.jpeg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/uxr.jpeg")
+START_PIC = os.environ.get("START_PIC", "https://envs.sh/ttL.png")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://envs.sh/tsH.png")
 # (extra pic you provided "https://envs.sh/uxs.jpeg" is unused since only 2 vars exist)
 #--------------------------------------------
 
 HELP_TXT = "<b><blockquote>𝑻𝒉𝒊𝒔 𝒊𝒔 𝒂𝒏 𝒇𝒊𝒍𝒆 𝒕𝒐 𝒍𝒊𝒏𝒌 𝒃𝒐𝒕 𝒘𝒐𝒓𝒌 𝒇𝒐𝒓 @network_of_kingdom\n\n❏ 𝑩𝒐𝒕 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔\n├/start : 𝑺𝒕𝒂𝒓𝒕 𝒕𝒉𝒆 𝒃𝒐𝒕\n├/about : 𝑶𝒖𝒓 𝑰𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏\n└/help : 𝑯𝒆𝒍𝒑 𝒓𝒆𝒍𝒂𝒕𝒆𝒅 𝒃𝒐𝒕\n\n 𝑺𝒊𝒎𝒑𝒍𝒚 𝒄𝒍𝒊𝒄𝒌 𝒐𝒏 𝒍𝒊𝒏𝒌 𝒂𝒏𝒅 𝒔𝒕𝒂𝒓𝒕 𝒕𝒉𝒆 𝒃𝒐𝒕 𝑱𝒐𝒊𝒏 𝒃𝒐𝒕𝒉 𝒄𝒉𝒂𝒏𝒏𝒆𝒍𝒔 𝒂𝒏𝒅 𝒕𝒓𝒚 𝒂𝒈𝒂𝒊𝒏 𝒕𝒉𝒂𝒕𝒔 𝒊𝒕.....!\n\n 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒅 𝒃𝒚 <a href=https://t.me/OwnerOfNG>𝑵𝑮_x</a></blockquote></b>"
 ABOUT_TXT = "<b><blockquote>◈ 𝑪𝒓𝒆𝒂𝒕𝒐𝒓: <a href=https://t.me/OwnerOfNG>𝑵𝑮_x</a>\n◈ 𝑭𝒐𝒖𝒏𝒅𝒆𝒓 𝒐𝒇 : <a href=https://t.me/network_of_kingdom>𝑲𝒊𝒏𝒈𝒅𝒐𝒎 𝑵𝒆𝒕𝒘𝒐𝒓𝒌</a>\n◈ 𝑨𝒏𝒊𝒎𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 : <a href=https://t.me/Anime_Of_Kingdom>𝑨𝑵𝑰𝑴𝑬 𝑲𝑰𝑵𝑮𝑫𝑶𝑴</a>\n◈ 𝑺𝒆𝒓𝒊𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 : <a href=https://t.me/Pornhwa_KN>𝑾𝒆𝒃𝒔𝒆𝒓𝒊𝒆𝒔 𝑭𝒍𝒊𝒙</a>\n◈ 𝑨𝒅𝒖𝒍𝒕 𝑴𝒂𝒏𝒉𝒘𝒂 : <a href=https://t.me/Pornhwa_KN>𝑷𝒐𝒓𝒏𝒉𝒘𝒂𝒔</a>\n◈ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 : <a href=https://t.me/OwnerOfNG>𝑵𝑮_x</a></blockquote></b>"
 #--------------------------------------------
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʜᴇʟʟᴏ {mention}\n\n<blockquote> ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.</blockquote></b>")
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {mention}\n\n<b><blockquote>ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʀᴇʟᴏᴀᴅ button ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛᴇᴅ ꜰɪʟᴇ.</b></blockquote>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>𝑯𝒆𝒍𝒍𝒐 {mention}\n\n<blockquote> 𝑰 𝒂𝒎 𝑭𝒊𝒍𝒆 𝑺𝒕𝒐𝒓𝒆 𝑩𝒐𝒕, 𝑰 𝒄𝒂𝒏 𝒔𝒕𝒐𝒓𝒆 𝒑𝒓𝒊𝒗𝒂𝒕𝒆 𝒇𝒊𝒍𝒆𝒔 𝒊𝒏 𝒔𝒑𝒆𝒄𝒊𝒇𝒊𝒆𝒅 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒂𝒏𝒅 𝒐𝒕𝒉𝒆𝒓 𝒖𝒔𝒆𝒓𝒔 𝒄𝒂𝒏 𝒂𝒄𝒄𝒆𝒔𝒔 𝒊𝒕 𝒇𝒓𝒐𝒎 𝒔𝒑𝒆𝒄𝒊𝒂𝒍 𝒍𝒊𝒏𝒌.</blockquote></b>")
+
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝑯𝒆𝒍𝒍𝒐 {mention}\n\n<b><blockquote>𝑱𝒐𝒊𝒏 𝒐𝒖𝒓 𝒄𝒉𝒂𝒏𝒏𝒆𝒍𝒔 𝒂𝒏𝒅 𝒕𝒉𝒆𝒏 𝒄𝒍𝒊𝒄𝒌 𝒐𝒏 𝑹𝒆𝒍𝒐𝒂𝒅 𝒃𝒖𝒕𝒕𝒐𝒏 𝒕𝒐 𝒈𝒆𝒕 𝒚𝒐𝒖𝒓 𝒓𝒆𝒒𝒖𝒆𝒔𝒕𝒆𝒅 𝒇𝒊𝒍𝒆.</b></blockquote>")
 
 CMD_TXT = """<blockquote><b>» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:</b></blockquote>
 
@@ -71,7 +72,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 #--------------------------------------------
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!"
+USER_REPLY_TEXT = "𝑵𝒐 𝑾𝒂𝒚! 𝑴𝒚 𝑺𝒆𝒏𝒑𝒂𝒊 𝑾𝒐𝒖𝒍𝒅𝒏’𝒕 𝑩𝒆 𝑺𝒐 𝑷𝒂𝒕𝒉𝒆𝒕𝒊𝒄!!"
 #--------------------------------------------
 
 LOG_FILE_NAME = "filesharingbot.txt"
