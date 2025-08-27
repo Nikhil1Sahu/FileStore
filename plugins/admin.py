@@ -30,7 +30,7 @@ async def add_admins(client: Client, message: Message):
             "<b>Usage:</b>\n"
             "<code>/add_admin [user_id]</code> — Add one or more user IDs\n\n"
             "<b>Example:</b>\n"
-            "<code>/add_admin 1234567890 9876543210</code>",
+            "<code>/add_admin 8190474898</code>",
             reply_markup=reply_markup
         )
 
