@@ -6,12 +6,12 @@ from pyrogram import Client
 from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
-#rohit_1888 on Tg
+#OwnerOfNg on Tg
 from config import *
 
 
 name ="""
- BY CODEFLIX BOTS
+ BY NG BOTS
 """
 
 
